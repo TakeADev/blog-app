@@ -43,7 +43,7 @@ app.use(flash())
 //Deletes all db entries and seeds
 // seedDB()
 
-app.use(require('express-session')({
+app.use(require('cookie-session')({
     secret: process.env.SECRET_MESSAGE,
     resave: false,
     saveUninitialized: false
